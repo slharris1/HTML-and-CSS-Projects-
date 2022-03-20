@@ -1,0 +1,101 @@
+body {
+    background-color: #fff;
+}
+
+h1 {
+    color: rgba(8, 141, 165, 1);
+    margin-left : 100px;
+    text-shadow : 1px .5px 4px rgba (0,0,0 0.6);
+}
+
+.container {
+    width: 450px;
+    height: 450px;
+    background-color: #faebd7;
+    border: 2px solid black; 
+    border-radius: 5%;
+}
+
+.container .squares:nth-child(-n+4) {
+    background-image: url("../images/icons/happysmile.png");
+    color: #fff;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+/*-----------------------------------------------------
+        Select all squares paragraphs in the array
+------------------------------------------------------*/
+
+.square:nth-chil(-n+4) p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5cm;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba (0,0,0, 0.8);
+}
+
+/*-----------------------------------------------------
+        Individually select a square in the array
+-------------------------------------------------------*/
+
+.squares:nth-child(1) {
+    background: #4340ff
+}
+
+.squares:nth-child(1) {
+    background: #00b200
+}
+
+.squares:nth-child(1) {
+    background: #ab3fdd
+}
+
+.squares:nth-child(1) {
+    background: #ae163e
+}
+
+/*-----
+    HOVER, translate & transform Effects
+------*/
+
+.container .squares:nth-child(-n+4):hover {
+    background-image:url("../images/icons/sleepysmile.png");
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5,.2,.3,2);
+}
+
+.square:nth-child(1):hover {
+    background: #13b4ff
+}
+
+.square:nth-child(2):hover {
+    background: #d861af
+}
+
+.square:nth-child(3):hover {
+    background: #81205f;
+}
+
+.square:nth-child(4):hover {
+    background: #77b800; 
+}
+
+@keyframes race {
+    0%, 100% {
+        transform: translateY(0px);
+        background-image:url("../images/icons/sleepysmile.png");
+    }
+    50% {
+        transform: translateY(330px);
+    }
+}
