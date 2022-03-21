@@ -150,7 +150,7 @@ section {
     HOME SECTION
 ===============================================*/
 #HOME {
-    background: url(/Images/Background/Amongus.jpg) no-repeat 50% 50%;
+    background: url(Images/Background/AmongUs.png) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover; 
@@ -274,9 +274,9 @@ section {
      width: 80%;
      border-top: 1px solid #09080d;
      border-right: 2px solid #424549;
-     border-bottom: 2 px solid #424549;
+     border-bottom: 2px solid #424549;
      border-left: 1px solid #090b0d;
-     margin: 10px less; 
+     margin: 10px 1em; 
      border-radius: 7px;
      background: #13161b;
      box-shadow: inset 0px 3px 0px 0px rgba(5, 5,5,0.15);
@@ -299,6 +299,7 @@ section {
      color: #000;
      cursor: pointer;
      font-family: 'raleway', sans-serif;
+     font-weight: 600;
      margin-top: 13%;
      position: relative;
      display: inline;
@@ -310,7 +311,7 @@ section {
      text-decoration: underline;
  }
 
- .submit input[tpye="submit"] {
+ .submit input[type="submit"] {
      color: rgba(225,225,225);
      cursor: pointer;
      border: none;
