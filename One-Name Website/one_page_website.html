@@ -40,7 +40,7 @@
 				<div class="photo-container">
 					<div class="photo">
 						<IMG SRC="./thumbs/thumbnail_1.png" alt="Red and yellow Car">
-						<div class="photo-overlay">
+						<div class="photo-overlay" onclick="openModal(); currentSlide(1)" class="hover-shadow">
 							<h3>Click to Enlarge</h3>
 							<p>A true classic for all car enthusiests!</p>
 						</div>
@@ -52,7 +52,7 @@
 				<div class="photo-container">
 					<div class="photo">
 						<IMG SRC="./thumbs/thumbnail_2.png" alt="Pink Car">
-						<div class="photo-overlay">
+						<div class="photo-overlay" onclick="openModal(); currentSlide(2)" class="hover-shadow">
 							<h3>Click to Enlarge</h3>
 							<p>A true classic for all car enthusiests!</p>
 						</div>
@@ -64,7 +64,7 @@
 				<div class="photo-container">
 					<div class="photo">
 						<IMG SRC="./thumbs/thumbnail_3.png" alt="Teal Car">
-						<div class="photo-overlay">
+						<div class="photo-overlay" onclick="openModal(); currentSlide(3)" class="hover-shadow">
 							<h3>Click to Enlarge</h3>
 							<p>A true classic for all car enthusiests!</p>
 						</div>
@@ -76,7 +76,7 @@
 				<div class="photo-container">
 					<div class="photo">
 						<IMG SRC="./thumbs/thumbnail_4.png" alt="Blue Car">
-						<div class="photo-overlay">
+						<div class="photo-overlay" onclick="openModal(); currentSlide(4)" class="hover-shadow">
 							<h3>Click to Enlarge</h3>
 							<p>A true classic for all car enthusiests!</p>
 						</div>
@@ -88,22 +88,6 @@
 			</div>
 		</section>
 		<!--End of gallery-->
-
-		<!-- Images used to open the lightbox -->
-<div class="row">
-	<div class="column">
-	  <img src="Thumbs/Thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
-	</div>
-	<div class="column">
-	  <img src="Thumbs/Thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-	</div>
-	<div class="column">
-	  <img src="Thumbs/Thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
-	</div>
-	<div class="column">
-	  <img src="Thumbs/Thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
-	</div>
-  </div>
   
   <!-- The Modal/Lightbox -->
   <div id="myModal" class="modal">
